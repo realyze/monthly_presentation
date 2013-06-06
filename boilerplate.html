@@ -13,16 +13,16 @@
 	<!-- Extension CSS files go here. Remove or add as needed. -->
 	<link rel="stylesheet" href="extensions/goto/deck.goto.css">
 	<link rel="stylesheet" href="extensions/menu/deck.menu.css">
-	<link rel="stylesheet" href="extensions/navigation/deck.navigation.css">
+	<!--link rel="stylesheet" href="extensions/navigation/deck.navigation.css"-->
 	<link rel="stylesheet" href="extensions/status/deck.status.css">
 	<link rel="stylesheet" href="extensions/hash/deck.hash.css">
 	<link rel="stylesheet" href="extensions/scale/deck.scale.css">
 
 	<!-- Style theme. More available in /themes/style/ or create your own. -->
-	<link rel="stylesheet" href="themes/style/web-2.0.css">
+	<link rel="stylesheet" href="themes/style/neon.css">
 	
 	<!-- Transition theme. More available in /themes/transition/ or create your own. -->
-	<link rel="stylesheet" href="themes/transition/horizontal-slide.css">
+	<link rel="stylesheet" href="themes/transition/fade.css">
 	
 	<!-- Required Modernizr file -->
 	<script src="modernizr.custom.js"></script>
@@ -32,15 +32,93 @@
 <!-- Begin slides. Just make elements with a class of slide. -->
 
 <section class="slide">
-	<h1>Slide</h1>
+	<h1>Typecast</h1>
 </section>
 
 <section class="slide">
-	<h1>Content</h1>
+  <img src="./img/typecast.png"/>
 </section>
 
 <section class="slide">
-	<h1>Here</h1>
+	<h2>Now What's That All About Then?</h2>
+  <ol>
+    <li class="slide">
+      <h3>"Typographic bliss in the browser"</h3>
+    </li>
+    <li class="slide">
+      <h3>Webapp that helps folks build better Internets</h3>
+      <p>You can select nice fonts and see how they play together</p>
+    </li>
+    <li class="slide">
+      <h3>Written in pure JS</h3>
+      <p>Backend is Node.js, frontend is Backbone</p>
+    </li>
+  </ol>
+</section>
+
+<section class="slide">
+  <h2>There's Something Wrong Though</h2>
+  <img class="slide" width="70%" src="http://wallpaperhdfree.com/wp-content/uploads/2013/04/Its-not-Lupus-by-Hugh-Laurie.png"/>
+</section>
+
+
+<section class="slide">
+  <h2>Perfect Love Gone Wrong</h2>
+  <ol>
+    <li class="slide">
+      <h3>The production app has issues</h3>
+    </li>
+    <li class="slide">
+      <h3>Performance</h3>
+      <p>App takes ages to start and is not particularly responsive</p>
+    </li>
+    <li class="slide">
+      <h3>Stability</h3>
+      <p>App seems to be crashing randomly</p>
+    </li>
+    <li class="slide">
+      <h3>Memory Leaks</h3>
+      <p>Notoriously hard to tell...</p>
+      <p class="slide">But the app seems to be consuming quite a lot of memory</p>
+    </li>
+  </ol>
+</section>
+
+
+<section class="slide">
+<h2>Rewrite In Progress</h2>
+  <ol>
+    <li class="slide">
+      <h3>Code is heavily modular and unit-tested</h3>
+      <p>Lots of small require.js modules &amp; TDD with Mocha</p>
+    </li>
+    <li class="slide">
+      <h3>Single "bus" (IMC)</h3>
+      <p>Used by all the modules to communicate (via messaging)</p>
+    </li>
+    <li class="slide">
+      <h3>Code Reviews</h3>
+      <p>Meticulous and pretty hard core</p>
+      <p class="slide">Using GitHub pull requests</p>
+    </li>
+  </ol>
+</section>
+
+<section class="slide">
+  <h2>Testing</h2>
+  <ol>
+    <li class="slide">
+      <h3>Mocha and TDD</h3>
+      <p>Write tests first for every method</p>
+      <p class="slide">Writing tests for private methods too</p>
+    </li>
+    <li class="slide">
+      <h3>Running tests</h3>
+      <p>Mocha test runner (run by Grunt)</p>
+      <p class="slide">Phantom.JS Headless webkit browser as the main target (tests run on Jenkins)</p>
+      <p class="slide">There are some plans to use karma runner and Jenkins to run a test grid</p>
+    </li>
+  </ol>
 </section>
 
 <!-- End slides. -->
@@ -85,6 +163,7 @@
 <script src="extensions/status/deck.status.js"></script>
 <script src="extensions/navigation/deck.navigation.js"></script>
 <script src="extensions/scale/deck.scale.js"></script>
+<script src="extensions/step/deck.step.js"></script>
 
 <!-- Initialize the deck. You can put this in an external file if desired. -->
 <script>
